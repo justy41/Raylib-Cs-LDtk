@@ -18,7 +18,7 @@ public class EntityFactory {
         this.scene = scene;
         this.world = world;
         
-        List<EntityInstance> entities = world.GetEntities(["Actors", "Solids"]);
+        List<EntityInstance> entities = world.GetEntities(["Actors", "Solids"]); // It's good practice to have these two entity layers in a LDtk project.
         foreach(EntityInstance instance in entities) {
             if(instance.Tags.Contains("Actor")) {
                 switch(instance.Identifier) {
