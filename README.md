@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/89290d8f-8d91-4d03-a6aa-5e86b8934baa
 | [Raylib-cs](https://www.nuget.org/packages/Raylib-cs) | 8.0.0 |
 | [ImGui.NET](https://www.nuget.org/packages/ImGui.NET) | 1.91.6.1 |
  
-`rlImGui-cs` is used to bridge ImGui with Raylib for the in-engine editor overlay.
+`rlImGui-cs` is used to bridge ImGui with Raylib for the in-engine editor overlay (by pressing ``` ` ```).
  
 ## Getting started
  
