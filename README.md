@@ -23,10 +23,9 @@ Raylib-Cs-LDtk/
 ```
 
 ## Videos:
+https://github.com/user-attachments/assets/d25b4ee6-4fb5-4581-8850-595c24c59215
 
-https://github.com/justy41/Raylib-Cs-LDtk/blob/41c5082650a5de9709d0d548da416c19c18afe12/Media/RaylibCsLDtk.mp4
-
-https://github.com/justy41/Raylib-Cs-LDtk/blob/41c5082650a5de9709d0d548da416c19c18afe12/Media/RaylibCsLDtk_ldtk.mp4
+https://github.com/user-attachments/assets/89290d8f-8d91-4d03-a6aa-5e86b8934baa
 
 ## Dependencies
  
