@@ -1085,7 +1085,10 @@
 					"max": null,
 					"regex": null,
 					"acceptFileTypes": null,
-					"defaultOverride": null,
+					"defaultOverride": {
+						"id": "V_String",
+						"params": ["platforms.png"]
+					},
 					"textLanguageMode": null,
 					"symmetricalRef": false,
 					"autoChainRef": true,
@@ -1248,10 +1251,7 @@
 							"px": [192,256],
 							"fieldInstances": [
 								{ "__identifier": "Name", "__type": "String", "__value": "Platform", "__tile": null, "defUid": 36, "realEditorValues": [] },
-								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["platforms.png"]
-								}] }
+								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [null] }
 							],
 							"__worldX": 192,
 							"__worldY": 256
@@ -1270,10 +1270,7 @@
 							"px": [64,192],
 							"fieldInstances": [
 								{ "__identifier": "Name", "__type": "String", "__value": "Platform", "__tile": null, "defUid": 36, "realEditorValues": [] },
-								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["platforms.png"]
-								}] }
+								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [null] }
 							],
 							"__worldX": 64,
 							"__worldY": 192
@@ -1292,10 +1289,7 @@
 							"px": [112,240],
 							"fieldInstances": [
 								{ "__identifier": "Name", "__type": "String", "__value": "Platform", "__tile": null, "defUid": 36, "realEditorValues": [] },
-								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["platforms.png"]
-								}] }
+								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [null] }
 							],
 							"__worldX": 112,
 							"__worldY": 240
@@ -1314,10 +1308,7 @@
 							"px": [160,160],
 							"fieldInstances": [
 								{ "__identifier": "Name", "__type": "String", "__value": "Platform", "__tile": null, "defUid": 36, "realEditorValues": [] },
-								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [{
-									"id": "V_String",
-									"params": ["platforms.png"]
-								}] }
+								{ "__identifier": "TexturePath", "__type": "String", "__value": "platforms.png", "__tile": null, "defUid": 38, "realEditorValues": [null] }
 							],
 							"__worldX": 160,
 							"__worldY": 160
