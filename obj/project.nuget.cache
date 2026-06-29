@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qm7n2ojtMFE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Iustin\\Documents\\PROJECTS\\_RAYLIB\\RaylibCsTemplate_v2\\RaylibCsTemplate_v2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Iustin\\.nuget\\packages\\imgui.net\\1.91.6.1\\imgui.net.1.91.6.1.nupkg.sha512",
+    "C:\\Users\\Iustin\\.nuget\\packages\\raylib-cs\\8.0.0\\raylib-cs.8.0.0.nupkg.sha512",
+    "C:\\Users\\Iustin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Iustin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Iustin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
