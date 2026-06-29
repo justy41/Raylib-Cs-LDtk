@@ -19,7 +19,6 @@ public class EntityFactory {
         this.world = world;
         
         List<EntityInstance> entities = world.GetEntities(["Actors", "Solids"]);
-        Console.WriteLine(entities.Count);
         foreach(EntityInstance instance in entities) {
             if(instance.Tags.Contains("Actor")) {
                 switch(instance.Identifier) {

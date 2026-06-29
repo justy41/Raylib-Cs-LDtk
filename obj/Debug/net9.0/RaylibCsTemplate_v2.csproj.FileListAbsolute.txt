@@ -24,3 +24,4 @@ C:\Users\Iustin\Documents\PROJECTS\_RAYLIB\RaylibCsTemplate_v2\obj\Debug\net9.0\
 C:\Users\Iustin\Documents\PROJECTS\_RAYLIB\RaylibCsTemplate_v2\obj\Debug\net9.0\RaylibCsTemplate_v2.pdb
 C:\Users\Iustin\Documents\PROJECTS\_RAYLIB\RaylibCsTemplate_v2\obj\Debug\net9.0\RaylibCsTemplate_v2.genruntimeconfig.cache
 C:\Users\Iustin\Documents\PROJECTS\_RAYLIB\RaylibCsTemplate_v2\obj\Debug\net9.0\ref\RaylibCsTemplate_v2.dll
+C:\Users\Iustin\Documents\PROJECTS\_RAYLIB\RaylibCsTemplate_v2\obj\Debug\net9.0\RaylibCsTemplate_v2.sourcelink.json

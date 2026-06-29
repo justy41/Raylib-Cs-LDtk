@@ -42,22 +42,24 @@ public class LdtkWorld {
         return coord.Levels.ToList();
     }
     
-    public Level GetLevel(string name) {
+    public Level? GetLevel(string name) {
         foreach(var level in GetLevels()) {
             if(level.Identifier == name)
                 return level;
         }
         
-        throw new ArgumentException("Couldn't find level with name " + name);
+        Console.WriteLine("\n!!! Couldn't find level with name " + name);
+        return null;
     }
     
-    public LayerInstance GetLayer(string name, string levelName) {
+    public LayerInstance? GetLayer(string name, string levelName) {
         foreach(var layer in GetLevel(levelName).LayerInstances) {
             if(layer.Identifier == name)
                 return layer;
         }
         
-        throw new ArgumentException("Couldn't get layer with name " + name + " in level with name " + levelName);
+        Console.WriteLine("\n!!! Couldn't get layer with name " + name + " in level with name " + levelName);
+        return null;
     }
     
     /// <summary>
@@ -66,6 +68,8 @@ public class LdtkWorld {
     public List<IntGridTile> GetLayersIntGrid(string collisionLayerName) {
         List<IntGridTile> tiles = new();
         foreach(Level level in GetLevels()) {
+            if(GetLayer(collisionLayerName, level.Identifier) == null) continue;
+            
             var collisionLayer = GetLayer(collisionLayerName, level.Identifier);
             for(int i = 0; i<collisionLayer.IntGridCsv.Length-1; i++) {
                 if(collisionLayer.IntGridCsv[i] != 0) {
@@ -90,6 +94,8 @@ public class LdtkWorld {
         List<EntityInstance> result = new();
         foreach(var level in GetLevels()) {
             foreach(string name in entityLayerNames) {
+                if(GetLayer(name, level.Identifier) == null) continue;
+                
                 result.AddRange(GetLayer(name, level.Identifier).EntityInstances.ToList());
             }
         }
@@ -103,6 +109,8 @@ public class LdtkWorld {
     public EntityInstance? GetEntity(string entityName, string[] entityLayerNames) {
         foreach(var level in GetLevels()) {
             foreach(string name in entityLayerNames) {
+                if(GetLayer(name, level.Identifier) == null) continue;
+                
                 foreach(var instance in GetLayer(name, level.Identifier).EntityInstances) {
                     if(entityName == instance.Identifier) {
                         return instance;
@@ -121,6 +129,8 @@ public class LdtkWorld {
     public List<IntGridTile> GetLayersIntGridWithValue(string collisionLayerName, int valueToGet) {
         List<IntGridTile> tiles = new();
         foreach(Level level in GetLevels()) {
+            if(GetLayer(collisionLayerName, level.Identifier) == null) continue;
+            
             var collisionLayer = GetLayer(collisionLayerName, level.Identifier);
             for(int i = 0; i<collisionLayer.IntGridCsv.Length-1; i++) {
                 if(collisionLayer.IntGridCsv[i] == valueToGet) {
@@ -172,6 +182,8 @@ public class LdtkWorld {
     /// </summary>
     public void DrawLevels(string[] levelNames) {
         foreach(string name in levelNames) {
+            if(GetLevel(name) == null) continue;
+            
             DrawLevel(GetLevel(name).Identifier);
         }
     }
@@ -180,6 +192,8 @@ public class LdtkWorld {
     /// Draw LDtk level with a specific name.
     /// </summary>
     public void DrawLevel(string levelName) {
+        if(GetLevel(levelName) == null) return;
+        
         Level level = GetLevel(levelName);
         foreach(var layer in level.LayerInstances) {
             DrawLayer(layer.Identifier, level.Identifier);
@@ -190,6 +204,8 @@ public class LdtkWorld {
     /// Draw a LDtk layer with a specific name from a specific level.
     /// </summary>
     public void DrawLayer(string name, string levelName) {
+        if(GetLevel(levelName) == null || GetLayer(name, levelName) == null) return;
+        
         Level level = GetLevel(levelName);
         LayerInstance layer = GetLayer(name, levelName);
         if(layer.Visible) {
