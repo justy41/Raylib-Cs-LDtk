@@ -1,0 +1,23 @@
+# Build folders
+build/
+bin/
+out/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.pdb
+*.ilk
+
+# VS Code (this one is optional)
+# .vscode/
+
+# macOS
+.DS_Store
